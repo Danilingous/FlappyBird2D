@@ -6,6 +6,6 @@ public class BirdAddForce : MonoBehaviour
     [SerializeField] private float _forceValue = 5f;
     public void AddForcePerTouch()
     {
-        _rigitbody.velocity = Vector2.up * _forceValue;
+        if(_rigitbody) _rigitbody.velocity = Vector2.up * _forceValue;
     }
 }
