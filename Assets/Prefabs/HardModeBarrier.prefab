@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 15822172634512925}
   - component: {fileID: 15822172634512926}
+  - component: {fileID: 3997912694613571686}
   m_Layer: 0
   m_Name: HoleColider
   m_TagString: Untagged
@@ -142,6 +143,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.8105272}
   m_EdgeRadius: 0
+--- !u!114 &3997912694613571686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15822172634512924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf46c07bb1669cd40a6f1bc3d2f1f6ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &15822172797890004
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,6 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 498110e563d550943b4b7bddae10968a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Speed: 0
 --- !u!1 &15822173116434905
 GameObject:
   m_ObjectHideFlags: 0

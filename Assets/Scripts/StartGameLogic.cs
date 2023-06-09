@@ -16,6 +16,7 @@ public class StartGameLogic : MonoBehaviour
 
         _canvasesManager.OffAllCanvases();
         _canvasesManager.OnCanvasAddBirdForceButton();
+        _canvasesManager.OnCanvasPointCounter();
 
     }
 }

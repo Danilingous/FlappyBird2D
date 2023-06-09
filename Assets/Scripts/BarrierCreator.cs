@@ -30,13 +30,13 @@ public class BarrierCreator : MonoBehaviour
             {
                 float randomHeight = Random.Range(-3f, 2.8f);
                 GameObject barrier = Instantiate(_barrierHardModePrefab, new Vector3(12, randomHeight, 0), Quaternion.identity);
-                Destroy(barrier, 15);
+               // Destroy(barrier, 15);
             }
             else
             {
                 float randomHeight = Random.Range(-1.7f, 2f);
                 GameObject barrier = Instantiate(_barrierEasyModePrefab, new Vector3(12, randomHeight, 0), Quaternion.identity);
-                Destroy(barrier, 15);
+              //  Destroy(barrier, 15);
             }
             yield return new WaitForSeconds(2f);
 

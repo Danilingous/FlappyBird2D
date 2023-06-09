@@ -1,18 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BarrierHoleLogic : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private PointCounter _pointCounter;
     void Start()
     {
-        
+        _pointCounter = FindObjectOfType<PointCounter>();
     }
 
-    // Update is called once per frame
-    void Update()
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        _pointCounter.AddPoint();
     }
+
 }

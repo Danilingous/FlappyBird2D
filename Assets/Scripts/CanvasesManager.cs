@@ -21,4 +21,9 @@ public class CanvasesManager : MonoBehaviour
     }
 
     public void OnCanvasAddBirdForceButton() => _canvasAddBirdForceButton.SetActive(true);
+    public void OnCanvasPointCounter() => _canvasPointCounter.SetActive(true);
+    
+
+
+
 }
