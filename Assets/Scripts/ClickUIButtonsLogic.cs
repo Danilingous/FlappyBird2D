@@ -1,5 +1,5 @@
-
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ClickUIButtonsLogic : MonoBehaviour
 {
@@ -13,5 +13,7 @@ public class ClickUIButtonsLogic : MonoBehaviour
 
     public void ButtonMuteOnClick() => _soundMode.MuteOn();
     public void ButtonMuteOffClick() => _soundMode.MuteOff();
+    public void ButtonPlayAgainClick()=>SceneManager.LoadScene(0);
+    
 
 }

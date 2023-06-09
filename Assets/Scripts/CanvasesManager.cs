@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class CanvasesManager : MonoBehaviour
@@ -22,7 +23,29 @@ public class CanvasesManager : MonoBehaviour
 
     public void OnCanvasAddBirdForceButton() => _canvasAddBirdForceButton.SetActive(true);
     public void OnCanvasPointCounter() => _canvasPointCounter.SetActive(true);
-    
+
+
+    public void OnEndGameCanvas()
+    {
+        _canvasAddBirdForceButton.SetActive(false);
+        StartCoroutine(CoroutineOnEndGameCanvas());
+    }
+   private IEnumerator CoroutineOnEndGameCanvas()
+    {
+        yield return new WaitForSeconds(1);
+        _canvasEndGame.SetActive(true);
+        _canvasSoundMode.SetActive(true);
+
+    }
+
+    public void OnCanvasChooseGameMode()
+    {
+        _canvasEndGame.SetActive(false);
+        _canvasPointCounter.SetActive(false);
+        _canvasChooseGameMode.SetActive(true);
+    }
+
+
 
 
 

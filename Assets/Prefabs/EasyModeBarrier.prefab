@@ -46,7 +46,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.004999995, y: 0.04237166}
+  m_Offset: {x: 0.06473029, y: 0.03700775}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -57,7 +57,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 1.300425}
+  m_Size: {x: 0.36053944, y: 1.3111528}
   m_EdgeRadius: 0
 --- !u!114 &7454005716722097717
 MonoBehaviour:
@@ -71,6 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf46c07bb1669cd40a6f1bc3d2f1f6ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _addPointSound: {fileID: 3696335300500393484, guid: 63840a96bcf2e5b41b214980eaae4689, type: 3}
 --- !u!1 &4801393721177768815
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,6 +249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5df2b10dacf5eb4f8be85dd37fbb70b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _loseSoundPrefab: {fileID: 2531714802497396400, guid: 3c58efd0e1e198f418f9ff44fd2de02d, type: 3}
 --- !u!61 &4801393722129677211
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -319,6 +321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5df2b10dacf5eb4f8be85dd37fbb70b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _loseSoundPrefab: {fileID: 2531714802497396400, guid: 3c58efd0e1e198f418f9ff44fd2de02d, type: 3}
 --- !u!61 &4801393722330483059
 BoxCollider2D:
   m_ObjectHideFlags: 0
