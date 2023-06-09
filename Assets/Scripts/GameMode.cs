@@ -6,7 +6,8 @@ public class GameMode : MonoBehaviour
     private const float _speedBarrierSlowMode = 3f;
     private const float _speedBarrierRapidMode = 5f;
 
-    private float _speedBarrierForwardMove = _speedBarrierSlowMode;
+    private bool _isMute;
+    private float _curentSpeedBarrierForwardMove = _speedBarrierSlowMode;
     private NamesGameMode _curentNamesGameMode = NamesGameMode.Easy; 
 
     private void Awake()
@@ -15,32 +16,43 @@ public class GameMode : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-
+            LoadPlayerPrefs();
         }
         else Destroy(gameObject);
     }
 
-    public float GetCurentSpeedBarrierForwardMove() => _speedBarrierForwardMove;
+    private void LoadPlayerPrefs()
+    {
+        
+        if (PlayerPrefs.HasKey("GameMode"))
+        {
+            _curentNamesGameMode = (NamesGameMode)PlayerPrefs.GetInt("GameMode");
+            if ((int)_curentNamesGameMode > 1) _curentSpeedBarrierForwardMove = _speedBarrierRapidMode;
+        }
+        if (PlayerPrefs.HasKey("isMute"))
+        {
+            _isMute = System.Convert.ToBoolean(PlayerPrefs.GetInt("isMute"));
+        }
+    }
+
+
+
+    public float GetCurentSpeedBarrierForwardMove() => _curentSpeedBarrierForwardMove;
     public NamesGameMode GetCurentNameGameMode() => _curentNamesGameMode;
-
-
-
-
-
 
     public void SetEasyMode()
     {
-        _speedBarrierForwardMove = _speedBarrierSlowMode;
+        _curentSpeedBarrierForwardMove = _speedBarrierSlowMode;
         _curentNamesGameMode = NamesGameMode.Easy;
     }
     public void SetHardMode()
     {
-        _speedBarrierForwardMove = _speedBarrierSlowMode;
+        _curentSpeedBarrierForwardMove = _speedBarrierSlowMode;
         _curentNamesGameMode = NamesGameMode.Hard;
     }
     public void SetVeryHardMode()
     {
-        _speedBarrierForwardMove = _speedBarrierRapidMode;
+        _curentSpeedBarrierForwardMove = _speedBarrierRapidMode;
         _curentNamesGameMode = NamesGameMode.VeryHard;
     }
 

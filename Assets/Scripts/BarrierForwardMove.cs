@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class BarrierForwardMove : MonoBehaviour
 {
-     private float _speed;
+     public float Speed;
     private void Start()
     {
-        _speed = GameMode.Instance.GetCurentSpeedBarrierForwardMove();
+        Speed = GameMode.Instance.GetCurentSpeedBarrierForwardMove();
     }
     void Update()
     {
-        transform.position -= new Vector3(_speed*Time.deltaTime, 0, 0);
+        transform.position -= new Vector3(Speed*Time.deltaTime, 0, 0);
 
     }
 }
