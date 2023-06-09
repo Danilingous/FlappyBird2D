@@ -8,7 +8,7 @@ public class GameMode : MonoBehaviour
 
     private bool _isMute;
     private float _curentSpeedBarrierForwardMove = _speedBarrierSlowMode;
-    private NamesGameMode _curentNamesGameMode = NamesGameMode.Easy; 
+    private NamesGameMode _curentNamesGameMode = NamesGameMode.Easy;
 
     private void Awake()
     {
@@ -23,7 +23,7 @@ public class GameMode : MonoBehaviour
 
     private void LoadPlayerPrefs()
     {
-        
+
         if (PlayerPrefs.HasKey("GameMode"))
         {
             _curentNamesGameMode = (NamesGameMode)PlayerPrefs.GetInt("GameMode");
@@ -39,6 +39,7 @@ public class GameMode : MonoBehaviour
 
     public float GetCurentSpeedBarrierForwardMove() => _curentSpeedBarrierForwardMove;
     public NamesGameMode GetCurentNameGameMode() => _curentNamesGameMode;
+    public bool GetMuteStatus() => _isMute;
 
     public void SetEasyMode()
     {
