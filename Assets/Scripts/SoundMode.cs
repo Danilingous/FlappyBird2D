@@ -23,6 +23,7 @@ public class SoundMode : MonoBehaviour
         _buttonMuteOn.SetActive(false);
         _buttonMuteOff.SetActive(true);
         AudioListener.volume = 0;
+        GameMode.Instance.OnMute();
         PlayerPrefs.SetInt("isMute", 1);
     }
 
@@ -31,6 +32,7 @@ public class SoundMode : MonoBehaviour
         _buttonMuteOn.SetActive(true);
         _buttonMuteOff.SetActive(false);
         AudioListener.volume = 1;
+        GameMode.Instance.OffMute();
         PlayerPrefs.SetInt("isMute", 0);
     }
 

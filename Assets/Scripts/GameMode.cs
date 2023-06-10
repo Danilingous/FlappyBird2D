@@ -41,6 +41,9 @@ public class GameMode : MonoBehaviour
     public NamesGameMode GetCurentNameGameMode() => _curentNamesGameMode;
     public bool GetMuteStatus() => _isMute;
 
+    public void OnMute() => _isMute = true;
+    public void OffMute() => _isMute = false;
+
     public void SetEasyMode()
     {
         _curentSpeedBarrierForwardMove = _speedBarrierSlowMode;
