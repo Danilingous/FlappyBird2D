@@ -206,7 +206,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 14730863}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 647017048}
+        m_TargetAssemblyTypeName: ClickUIButtonsLogic, Assembly-CSharp
+        m_MethodName: ButtonGameModesClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &14730863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1423,6 +1435,7 @@ MonoBehaviour:
   _birdAddForce: {fileID: 751871789}
   _startGameLogic: {fileID: 1555091447}
   _soundMode: {fileID: 804214593}
+  _canvasesManager: {fileID: 1480897534}
 --- !u!1 &659774643
 GameObject:
   m_ObjectHideFlags: 0
@@ -2455,7 +2468,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 988403123}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 647017048}
+        m_TargetAssemblyTypeName: ClickUIButtonsLogic, Assembly-CSharp
+        m_MethodName: ButtonVeryHardModeClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &988403123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2748,7 +2773,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1153776619
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2916,7 +2941,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1238865323}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 647017048}
+        m_TargetAssemblyTypeName: ClickUIButtonsLogic, Assembly-CSharp
+        m_MethodName: ButtonHardModeClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1238865323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3838,7 +3875,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1844165653}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 647017048}
+        m_TargetAssemblyTypeName: ClickUIButtonsLogic, Assembly-CSharp
+        m_MethodName: ButtonEasyModeClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1844165653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4207,7 +4256,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2015075436
 RectTransform:
   m_ObjectHideFlags: 0
